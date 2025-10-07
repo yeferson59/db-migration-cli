@@ -6,10 +6,6 @@ rm -rf dist/
 # Crea directorio
 mkdir -p dist/
 
-# Install dependencies
-go mod download
-go mod tidy
-
 # Linux AMD64
 GOOS=linux GOARCH=amd64 go build -o dist/db-migration-cli_linux_amd64 main.go
 
