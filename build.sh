@@ -21,6 +21,3 @@ GOOS=darwin GOARCH=arm64 go build -o dist/db-migration-cli_darwin_arm64 main.go
 
 # Windows AMD64
 GOOS=windows GOARCH=amd64 go build -o dist/db-migration-cli_windows_amd64.exe main.go
-
-
-upx --best dist/*
